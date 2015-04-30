@@ -3,7 +3,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package batch.go allows for batch processing several repositories with repotool.
+// Package batch-repotool.go allows for batch processing several repositories
+// with repotool.
 // It is meant to insert a set of repositories data into a database, given
 // a path containing several repositories.
 // Depth where to find repositories from the given directory may be specified
