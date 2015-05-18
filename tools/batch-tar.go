@@ -82,7 +82,7 @@ func iterateRepos(tasks chan *exec.Cmd, tarBin, dirPath string, depth uint) {
 			repoPath := filepath.Join(dirPath, fi.Name())
 
 			tasks <- exec.Command(tarBin, "--remove-files", "-cf", repoPath+".tar",
-				"-C", path.Dir(repoPath), path.Base(repoPath))
+				"-C", path.Dir(repoPath), "--", path.Base(repoPath))
 		}
 		return
 	}
