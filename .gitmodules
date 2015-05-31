@@ -14,6 +14,10 @@
 	path = ght2dm
 	url = git@github.com:DevMine/ght2dm.git
 	branch = master
+[submodule "parsers"]
+	path = parsers
+	url = git@github.com:DevMine/parsers.git
+	branch = master
 [submodule "repotool"]
 	path = repotool
 	url = git@github.com:DevMine/repotool.git
@@ -21,6 +25,10 @@
 [submodule "srcanlzr"]
 	path = srcanlzr
 	url = git@github.com:DevMine/srcanlzr.git
+	branch = master
+[submodule "srccat"]
+	path = srccat
+	url = git@github.com:DevMine/srccat.git
 	branch = master
 [submodule "srctool"]
 	path = srctool
