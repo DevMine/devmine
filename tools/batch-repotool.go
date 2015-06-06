@@ -77,7 +77,9 @@ func iterateRepos(tasks chan *exec.Cmd, rtBin, configPath, path string, depth ui
 	if depth == 0 {
 		for _, fi := range fis {
 			if !fi.IsDir() {
-				continue
+				if filepath.Ext(fi.Name()) != ".tar" {
+					continue
+				}
 			}
 
 			fmt.Println("adding repository: ", fi.Name(), " to the tasks pool")
